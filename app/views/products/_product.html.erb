@@ -7,15 +7,29 @@ hr {
     margin-bottom: 2px;
     margin-top: 15px;
 } 
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+ /* not requied only for demo * */
+
+.panel {
+    height: 100%;
+}
+
 </style>
 
-<div class="row display-flex">
-    <div class="thumbnail">
+<div>
+    <div class="thumbnail" style="height: 300px; display:inline-block; vertical-align: top;">
       
     </style>
     
     <% if product.main_picture.attached? %>
-        <%= link_to image_tag(product.main_picture, style: 'max-height: 400px'), product %>
+        <%= link_to image_tag(product.main_picture, style: 'width: auto; height: 200px;'), product %>
      <% end %>
         
 

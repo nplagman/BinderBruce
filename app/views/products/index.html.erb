@@ -6,6 +6,7 @@
 <%= link_to 'Admin Dashboard', rails_admin_path, class: "btn btn-primary" %>
 
 
+
     <table>
       <thead>
       <tr>
@@ -33,10 +34,10 @@
 <% end %>
 
 
-
+<div class="container">
 <div class="row">
 
-<!--### This is the sidebar-->
+<!--### These are the category buttons-->
 
         <!-- <div class="col-md-1" style="padding-left: 5px;"> -->
    
@@ -50,7 +51,7 @@
           <div class="btn-group" style="margin-bottom: 10px;">
               <a href="/products"><button type="button" class="btn btn-primary">All Parts</button></a>
           </div> 
-    
+ </div>   
 
 
 
@@ -59,27 +60,28 @@
 <!--## Here is the 3-across grid of products-->
 
   <!-- <div class="col-md-9"> -->
-    <div class="container">
-      <% @products.in_groups_of(3) do |product_group| %>
+    <div class="row" style="margin: 5px;">
+      
+      <% @products.in_groups_of(4) do |product_group| %>
         
-              <div class="col-md-4">
+              <div class="col-md-3">
             <%= render product_group[0] if product_group[0].present? %>
                 </div>
 
-              <div class="col-md-4">
+              <div class="col-md-3">
             <%= render product_group[1] if product_group[1].present? %>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-3">
             <%= render product_group[2] if product_group[2].present? %>
               </div>
-          <!-- <div class="col-md-3">
+          <div class="col-md-3">
             <%= render product_group[3] if product_group[3].present? %>
-          </div> -->
+          </div>
               
         
       <% end %>
-
+      
     </div>
   <!-- </div> -->   
 </div>

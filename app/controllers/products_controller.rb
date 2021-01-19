@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
 
 
     if params[:category].blank?
-      @products = Product.page param[:page].order("created_at DESC").search(params[:term])
+      @products = Product.all.order("created_at DESC").search(params[:term])
     else
       @category_id = Category.find_by(name: params[:category]).id
       @products = Product.where(category_id: @category_id).order("created_at DESC")

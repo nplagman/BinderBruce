@@ -11,7 +11,7 @@ RailsAdmin.config do |config|
   # config/initialize/rails_admin.rb
   config.authorize_with do
     unless current_user.try(:admin?)
-       flash[:error] = "You are not authorize to access this page!"
+       flash[:error] = "You are not authorized to access this page!"
       redirect_to main_app.root_path
     end
   end

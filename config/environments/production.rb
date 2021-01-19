@@ -30,7 +30,7 @@ config.active_storage.service = :amazon
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
-  # config.action_controller.asset_host = 'd1tiwkfy6rldp9.cloudfront.net'
+  config.action_controller.asset_host = 'd1tiwkfy6rldp9.cloudfront.net'
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache

@@ -36,6 +36,7 @@ gem 'meta-tags'
 gem 'rb-readline'
 gem 'aws-sdk-s3', require: false
 gem 'aws-sdk'
+gem 'kaminari'
 
 
 

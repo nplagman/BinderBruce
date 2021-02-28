@@ -14600,7 +14600,7 @@ var o,i,s,a,u;return i=null!=n?n:{},a=i.restorationIdentifier,s=i.restorationDat
     };
 
     GoogleAnalytics.analyticsId = function() {
-      return 'UA-92830653-2';
+      return '260268658';
     };
 
     return GoogleAnalytics;
@@ -15035,7 +15035,7 @@ var o,i,s,a,u;return i=null!=n?n:{},a=i.restorationIdentifier,s=i.restorationDat
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-92830653-2', 'auto');
+  ga('create', '260268658', 'auto');
   ga('send', 'pageview');
 
 </script>

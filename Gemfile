@@ -38,6 +38,8 @@ gem 'aws-sdk-s3', require: false
 gem 'aws-sdk'
 gem 'kaminari'
 gem 'rack-cors'
+gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '3543363026121ee28d98dfce4cb6366980c055ee'
+
 
 
 
